@@ -1,0 +1,31 @@
+{
+    "name": "WakaTime Addon",
+    "description": "Removes limit of viewing history in WakaTime",
+    "version": "1.0",
+    "manifest_version": 3,
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "permissions": ["declarativeNetRequest"],
+    "background": {"service_worker":"background.js"},
+    "host_permissions": [
+        "*://wakatime.com/*"
+    ],
+    "content_scripts": [
+      {
+        "matches": [
+          "*://wakatime.com/*"
+        ],
+        "js": [
+          "content.js"
+        ]
+      }
+    ],
+    "declarative_net_request": {
+        "rule_resources": [{
+          "id": "rules",
+          "enabled": true,
+          "path": "rules.json"
+        }]
+      }
+  }
