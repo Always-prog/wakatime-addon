@@ -1,4 +1,5 @@
 # wakatime-addon
+### <a href="https://chrome.google.com/webstore/detail/wakatime-addon/najcldbmeoakbejeapljkfhnmkieibdk"> Chrome Extension</a>
 For non-premium users of WakaTime, there is a limitation on viewing their analytics - they can only view the data for the last 2 weeks. This extension removes this limitation. To use it, simply install the extension and refresh the WakaTime dashboard page.<br/>
 
 
